@@ -1,4 +1,4 @@
-# Clarity AI challenge - Álvaro de Prada  
+# XYZ.AI challenge - Álvaro de Prada  
 
 ## Description  
 This project is a simple Flask application that parses log files to filter connections based on host and time range, using Unix timestamps.
