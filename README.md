@@ -30,3 +30,8 @@ Then, open a browser and go to http://127.0.0.1:5000/ to access the application.
 Given a .txt log file like the one provided in the homework description, you need to include as input an init_datetime , an
 end_datetime, and a Hostname, and the program will return:
 - A list of hostnames connected to the given host during the given period.
+
+
+## Screenshot of the working tool
+![image](https://github.com/aprada9/Clarity-AI/assets/32163083/4f47db0a-1e3f-4627-8fa1-4ef7343bafc9)
+
