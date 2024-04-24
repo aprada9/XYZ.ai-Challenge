@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log File Parser</title>
+</head>
+<body>
+    <h1>Upload and Parse Log File</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required><br><br>
+        <input type="text" name="hostname" placeholder="Hostname" required><br><br>
+        <input type="text" name="start_time" placeholder="Start Time (Unix Timestamp)" required><br><br>
+        <input type="text" name="end_time" placeholder="End Time (Unix Timestamp)" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    {% if data %}
+        <h2>Results:</h2>
+        <div>{{ data|safe }}</div>
+    {% else %}
+        <p>No data submitted yet.</p>
+    {% endif %}
+</body>
+</html>
