@@ -9,9 +9,9 @@
     <h1>Upload and Parse Log File</h1>
     <form action="/" method="post" enctype="multipart/form-data">
         <input type="file" name="file" required><br><br>
-        <input type="text" name="hostname" placeholder="Hostname" required><br><br>
-        <input type="text" name="start_time" placeholder="Start Time (Unix Timestamp)" required><br><br>
-        <input type="text" name="end_time" placeholder="End Time (Unix Timestamp)" required><br><br>
+        <input type="text" name="hostname" placeholder="Hostname" required value="{{ hostname }}"><br><br>
+        <input type="text" name="start_time" placeholder="Start Time (Unix Timestamp)" required value="{{ start_time }}"><br><br>
+        <input type="text" name="end_time" placeholder="End Time (Unix Timestamp)" required value="{{ end_time }}"><br><br>
         <button type="submit">Submit</button>
     </form>
     {% if data %}
